@@ -1,0 +1,8 @@
+2020-11-04 12:47:42,405 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Starting ReadWriteFlatfileApllicationTest on DESKTOP-PNI0BPJ with PID 10604 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\01_Read_FlatFiles_Filter_And_Write_A_Flatfile)
+2020-11-04 12:47:42,415 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] No active profile set, falling back to default profiles: default
+2020-11-04 12:47:43,222 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Started ReadWriteFlatfileApllicationTest in 1.78 seconds (JVM running for 3.581)
+2020-11-04 12:47:43,494 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] 
+Test ReadWriteFlatFiles:
+2020-11-04 12:47:44,137 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] step1: von 12:47:44.017 bis 12:47:44.128 h, Dauer: 0.1 s
+2020-11-04 12:47:44,140 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Summe der Steps: 0.1 s
+2020-11-04 12:47:44,140 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Gesamtdauer Job: 0.1 s
