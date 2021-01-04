@@ -20,6 +20,7 @@ import java.util.List;
 public class MyWriter implements ItemWriter<Person> {
 
     private static final Logger log = LoggerFactory.getLogger(MyWriter.class);
+    private boolean writeHeader = false;
 
     @Value("${folder.WRITE.OUT}")
     private String outPath;
@@ -27,6 +28,9 @@ public class MyWriter implements ItemWriter<Person> {
     @Override
     public void write(List<? extends Person> items) throws Exception {
         for (Person p : items) {
+            if (!writeHeader && p.getId().equals("id")) {
+                writeHeader = true;
+            }
             String csvLine = p.getId() + ";" + p.getFirstName() + ";" + p.getLastName() + "\n";
 
             DateTimeFormatter timeStampPattern = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
