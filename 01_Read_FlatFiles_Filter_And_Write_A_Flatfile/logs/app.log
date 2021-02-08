@@ -1,29 +1,8 @@
-2021-01-04 13:37:02,057 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Starting ReadWriteFlatfileApllicationTest on DESKTOP-PNI0BPJ with PID 4164 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\01_Read_FlatFiles_Filter_And_Write_A_Flatfile)
-2021-01-04 13:37:02,089 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] No active profile set, falling back to default profiles: default
-2021-01-04 13:37:02,874 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Started ReadWriteFlatfileApllicationTest in 1.739 seconds (JVM running for 4.244)
-2021-01-04 13:37:03,207 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] 
+2021-02-08 11:10:03,330 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Starting ReadWriteFlatfileApllicationTest on DESKTOP-PNI0BPJ with PID 8780 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\01_Read_FlatFiles_Filter_And_Write_A_Flatfile)
+2021-02-08 11:10:03,330 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] No active profile set, falling back to default profiles: default
+2021-02-08 11:10:04,627 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Started ReadWriteFlatfileApllicationTest in 3.559 seconds (JVM running for 6.93)
+2021-02-08 11:10:05,283 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] 
 Test ReadWriteFlatFiles:
-2021-01-04 13:37:04,113 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] step1: von 13:37:03.995 bis 13:37:04.104 h, Dauer: 0.1 s
-2021-01-04 13:37:04,116 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Summe der Steps: 0.1 s
-2021-01-04 13:37:04,117 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Gesamtdauer Job: 0.1 s
-2021-01-04 13:37:44,210 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Starting ReadWriteFlatfileApllicationTest on DESKTOP-PNI0BPJ with PID 3704 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\01_Read_FlatFiles_Filter_And_Write_A_Flatfile)
-2021-01-04 13:37:44,222 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] No active profile set, falling back to default profiles: default
-2021-01-04 13:37:45,172 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Started ReadWriteFlatfileApllicationTest in 1.537 seconds (JVM running for 4.991)
-2021-01-04 13:37:45,459 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] 
-Test ReadWriteFlatFiles:
-2021-01-04 13:40:24,421 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Starting ReadWriteFlatfileApllicationTest on DESKTOP-PNI0BPJ with PID 7444 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\01_Read_FlatFiles_Filter_And_Write_A_Flatfile)
-2021-01-04 13:40:24,427 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] No active profile set, falling back to default profiles: default
-2021-01-04 13:40:25,342 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Started ReadWriteFlatfileApllicationTest in 1.564 seconds (JVM running for 4.811)
-2021-01-04 13:40:25,677 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] 
-Test ReadWriteFlatFiles:
-2021-01-04 13:40:51,179 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] step1: von 13:40:26.393 bis 13:40:45.446 h, Dauer: 19.0 s
-2021-01-04 13:40:51,180 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Summe der Steps: 19.0 s
-2021-01-04 13:40:51,181 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Gesamtdauer Job: 19.0 s
-2021-01-04 13:49:24,962 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Starting ReadWriteFlatfileApllicationTest on DESKTOP-PNI0BPJ with PID 5988 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\01_Read_FlatFiles_Filter_And_Write_A_Flatfile)
-2021-01-04 13:49:24,962 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] No active profile set, falling back to default profiles: default
-2021-01-04 13:49:25,711 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Started ReadWriteFlatfileApllicationTest in 1.834 seconds (JVM running for 4.908)
-2021-01-04 13:49:26,024 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] 
-Test ReadWriteFlatFiles:
-2021-01-04 13:49:26,696 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] step1: von 13:49:26.571 bis 13:49:26.680 h, Dauer: 0.1 s
-2021-01-04 13:49:26,696 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Summe der Steps: 0.1 s
-2021-01-04 13:49:26,696 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Gesamtdauer Job: 0.1 s
+2021-02-08 11:10:07,001 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] step1: von 11:10:06.736 bis 11:10:06.985 h, Dauer: 0.2 s
+2021-02-08 11:10:07,001 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Summe der Steps: 0.2 s
+2021-02-08 11:10:07,001 INFO de.dps.springbatch.ReadWriteFlatfileApllicationTest [main] Gesamtdauer Job: 0.3 s
