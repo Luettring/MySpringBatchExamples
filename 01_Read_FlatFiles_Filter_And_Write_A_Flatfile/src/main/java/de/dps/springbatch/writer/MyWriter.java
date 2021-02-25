@@ -33,14 +33,14 @@ public class MyWriter implements ItemWriter<Person> {
             }
             String csvLine = p.getId() + ";" + p.getFirstName() + ";" + p.getLastName() + "\n";
 
-            DateTimeFormatter timeStampPattern = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+            DateTimeFormatter timeStampPattern = DateTimeFormatter.ofPattern("yyyyMMdd");
             String timeStamp = timeStampPattern.format(LocalDateTime.now());
             String fileName = "outData_" + timeStamp + ".csv";
             FileUtils.writeStringToFile(
                 new File(outPath, fileName),
                     csvLine,
                     StandardCharsets.UTF_8,
-                    true
+                    false
             );
         }
     }

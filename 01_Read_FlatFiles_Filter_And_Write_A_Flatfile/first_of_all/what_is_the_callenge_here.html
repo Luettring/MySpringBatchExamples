@@ -1,0 +1,179 @@
+<html>
+
+    <head>
+    
+        <title>Spring Batch Examples</title>
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <!-- Das neueste kompilierte und minimierte CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Optionales Theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <!-- Das neueste kompilierte und minimierte JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        <link href="../jquery-ui/jquery-ui.css" rel="stylesheet">
+        <script src="jquery-3.4.0.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        
+        <style type="text/css">
+            
+             .body {
+                background-color:#ffffff;
+                color:#353833;
+                font-family:'DejaVu Sans', Arial, Helvetica, sans-serif;
+                font-size:14px;
+                margin:0;
+            }
+            
+            #umgebung{
+                
+                width:400px;
+                height: 300px;
+                background-color: yellow;
+                
+            }
+            
+            #resizable { 
+                width: 150px; 
+                height: 150px; 
+                padding: 0.5em;
+                background-color: red;
+            }
+            
+            .tooltip {
+              position: relative;
+            }
+
+            .tooltip span[role=tooltip] {
+              display: none;
+            }
+
+            .tooltip:hover span[role=tooltip] {
+              display: block;  
+              position: absolute; 
+              bottom: 2em;
+              left: -6em;
+              width: 15em;
+              padding: 0.5em;
+              z-index: 100;
+              color: #000; 
+              background-color: #ffebe6;
+              border: solid 1px #c32e04;
+              border-radius: 0.2em;
+            }
+            
+            .ofa_button
+                {background-color: #ffebe6; color: #000000; border: none; padding: 20px; text-align: left; margin-left: 10px; font-size: 16px;
+                filter:brightness(1); /* Helligkeit um 100 % */
+                transition: filter 0.3s;
+            } /* Animierte Änderung der angewendeten Filter */
+            .ofa_button:hover
+                {
+                filter:brightness(0.7); /* Helligkeit auf 70 % */
+                }
+            
+        </style>   
+    
+    </head>
+    
+    <body id="body">
+        
+        <div>
+        
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <div id="#ui-accordion" class ="ofa_button" style="width:100%;">
+
+				            <h2><b title="What is the challenge here?">Welche Herausforderung erwartet Dich hier?</b></h2>
+				        	<h3><b>Grobe Beschreibung</b></h3>
+				        	<h4>
+				        	In diesem Spring Batch Prozess werden eine oder mehrere 
+									Eingabesätze über mehrere CSV Eingabedateien 
+									eingelesen und in einer CSV-Gesamtdatei 
+									abgespeichert.
+				        	</h4>
+                            <h3><b>Programmablauf</b></h3>
+
+                            <h4><b>Input (ItemReader)</b></h4>
+                                <h5>Lesen einer oder mehrere Eingabesätze über 
+								mehrere CSV Eingabedateien<br>Die Verarbeitung 
+								erfolgt stückweise (&lsquo;Chunk-oriented&lsquo; - hier 5 Datensätze</h5>
+                            <h4><b>Process (ItemProcessor)</b></h4>
+                                <h5>Eingabesätze werden gefiltert (Nur die erste 
+								Kopfzeile wird übernommen)<br>Der Prozessor 
+								übergibt eine Liste von Personenitems an den 
+								Writer (stückweise)</h5>
+                            <h4><b>Output (ItemWriter)</b></h4>
+                                <h5>Es wird eine neue CSV Ausgabedatei (mit 
+								Zeitstempel im Dateinamen) erzeugt mit allen Eingabesätzen.</h5>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+ 
+        </div>
+        
+        <p>
+
+        <p><br/><br/>
+        <div id="accordion" class ="btn btn-block">
+            <h3 class="btn btn-lg btn-success" title="difficulty level=EASY">Schwierigkeitsgrad=EINFACH</h3>
+
+            <button type="button" class="btn btn-primary btn-lg" title="Send me your feedback..." data-toggle="modal" data-target="#meinModal" data-name="dp42113@yahoo.de">
+                Sende mir dein Feedback
+            </button>
+            <h5><i>All Sourcecode is for free without any software licence agreement!</i></h5>
+        </div>
+        
+      <script type="text/javascript">
+      
+                $('#meinModal').on('show.bs.modal', function (event) {
+                  var button = $(event.relatedTarget) // Button, der das Modal ausgelöst hat
+                  var recipient = button.data('name') // Infos aus data-*-Attributen 
+                  var modal = $(this)
+                  modal.find('.modal-title').text('Neue Nachricht an ' + recipient)
+                  modal.find('.modal-body input').val(recipient)
+                })
+
+                $('#meinModal').on('hidden.bs.modal', function (e) {
+                        alert("Modal wurde geschlossen");
+                })
+
+
+                $('[data-toggle="popover"]').popover();
+
+                $('[data-toggle="tooltip"]').tooltip();
+          
+                $("#accordion").accordion();
+                
+                $("#sortable").sortable();
+            
+                async function expandAll() {
+                  let heads = $(".ui-accordion");
+                  heads.each((index, el) => {
+                    if ($(el).hasClass("ui-accordion-collapsed") === true)
+                      $(el).trigger("click");
+                  });
+                }
+
+                async function collapseAll() {
+                  let heads = $(".ui-accordion");
+                  heads.each((index, el) => {
+                    if ($(el).hasClass("ui-accordion-collapsed") === false)
+                      $(el).trigger("click");
+                  });
+                }
+          
+        </script>
+        
+  </body>
+</html>
