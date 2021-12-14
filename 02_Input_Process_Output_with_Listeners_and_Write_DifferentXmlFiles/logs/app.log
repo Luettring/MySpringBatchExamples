@@ -1,0 +1,18 @@
+2021-12-14 08:43:56,803 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] Starting IPO_With_Listeners_and_Scheduling_Test on DESKTOP-PNI0BPJ with PID 10728 (started by User in C:\Users\User\Projekte\Java\MySpringBatchExamples\02_Input_Process_Output_with_Listeners_and_Write_DifferentXmlFiles)
+2021-12-14 08:43:56,819 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] No active profile set, falling back to default profiles: default
+2021-12-14 08:43:57,662 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] Started IPO_With_Listeners_and_Scheduling_Test in 1.279 seconds (JVM running for 3.744)
+2021-12-14 08:43:58,225 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] 
+Test StepReadCSVwriteXML:
+2021-12-14 08:43:58,881 INFO de.dps.springbatch.listener.BeforeStep [main] [BeforeStep]: ipo_batch_processing / myBeforeStep
+2021-12-14 08:43:59,037 ERROR de.dps.springbatch.listener.ErrorListener [main] onSkipInRead Parsing error at line: 3 in resource=[file [C:\Users\User\Projekte\Java\MySpringBatchExamples\02_Input_Process_Output_with_Listeners_and_Write_DifferentXmlFiles\src\main\resources\input\personalData1.csv]], input=[2;Masha;Hausmann;?;26.04.1991]
+2021-12-14 08:43:59,053 ERROR de.dps.springbatch.listener.ErrorListener [main] onSkipInRead Parsing error at line: 3 in resource=[file [C:\Users\User\Projekte\Java\MySpringBatchExamples\02_Input_Process_Output_with_Listeners_and_Write_DifferentXmlFiles\src\main\resources\input\personalData2.csv]], input=[6;Lutz;Kühnert;M]
+2021-12-14 08:43:59,068 ERROR de.dps.springbatch.listener.ErrorListener [main] onSkipInRead Parsing error at line: 5 in resource=[file [C:\Users\User\Projekte\Java\MySpringBatchExamples\02_Input_Process_Output_with_Listeners_and_Write_DifferentXmlFiles\src\main\resources\input\personalData2.csv]], input=[8;Dirk;Müller;M;33.02.1971]
+2021-12-14 08:43:59,099 ERROR de.dps.springbatch.listener.ErrorListener [main] onSkipInRead Parsing error at line: 17 in resource=[file [C:\Users\User\Projekte\Java\MySpringBatchExamples\02_Input_Process_Output_with_Listeners_and_Write_DifferentXmlFiles\src\main\resources\input\personalData3.csv]], input=[26;Andreas;Pollmann;M;29.M02.1988]
+2021-12-14 08:43:59,115 INFO de.dps.springbatch.listener.AfterStep [main] [AfterStep] : [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2021-12-14 08:43:59,115 INFO de.dps.springbatch.listener.AfterStep [main] [AfterStep] : 0
+2021-12-14 08:43:59,131 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] deleteFilesInDir: von 08:43:58.834 bis 08:43:58.865 h, Dauer: 0.0 s
+2021-12-14 08:43:59,131 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] myBeforeStep: von 08:43:58.881 bis 08:43:58.881 h, Dauer: 0.0 s
+2021-12-14 08:43:59,131 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] stepReadCSVwriteXML: von 08:43:58.896 bis 08:43:59.115 h, Dauer: 0.2 s
+2021-12-14 08:43:59,131 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] myAfterStep: von 08:43:59.115 bis 08:43:59.131 h, Dauer: 0.0 s
+2021-12-14 08:43:59,131 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] Summe der Steps: 0.2 s
+2021-12-14 08:43:59,131 INFO de.dps.springbatch.IPO_With_Listeners_and_Scheduling_Test [main] Gesamtdauer Job: 0.3 s
