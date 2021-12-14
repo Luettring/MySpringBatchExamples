@@ -40,7 +40,7 @@ public class MyWriter implements ItemWriter<Person> {
                 new File(outPath, fileName),
                     csvLine,
                     StandardCharsets.UTF_8,
-                    false
+                    true
             );
         }
     }
