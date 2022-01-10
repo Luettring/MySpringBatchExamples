@@ -1,7 +1,6 @@
 package de.dps.springbatch.step;
 
 import de.dps.springbatch.config.SqlStatements;
-import de.dps.springbatch.listener.ErrorListener;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
